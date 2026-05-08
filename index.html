@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Certificate Portal - Guru's Athenaeum</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-grid">
+                <div class="logo-left">
+                    <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663596859077/MifRLgcaCSCemyTQ.png" alt="GNI Logo" class="header-logo">
+                </div>
+                <div class="header-center">
+                    <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663596859077/VHuFLOHuGfHyXlCb.png" alt="GNI Technical Campus" class="header-center-img">
+                </div>
+                <div class="logo-right">
+                    <img src="https://gurusathenaeum.netlify.app/assets/logo.png" alt="Club Logo" class="header-logo" onerror="this.src='https://res.cloudinary.com/dysrmfhoa/image/upload/v1777184461/guru_athenaeum_n1i2hp.jpg'">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <p class="department-title">Department of Humanities and Sciences</p>
+            <h1>GURU'S ATHENAEUM</h1>
+            <p class="club-subtitle">English Literary Club</p>
+        </div>
+    </section>
+
+    <section class="certificate-portal" id="certificates">
+        <div class="container">
+            <h2>E-Certificate Portal</h2>
+            <div class="search-container">
+                <p>Enter your Roll Number to download your certificate.</p>
+                <input type="text" id="cert-search" class="search-input" placeholder="e.g. 21X01A0501">
+                <p class="search-hint">Note: Ensure the roll number is entered correctly as per college records.</p>
+                <button class="btn-primary" onclick="searchCertificate()">Search Certificate</button>
+                
+                <div id="certificate-result">
+                    <!-- Result will be injected here by JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Guru's Athenaeum - English Literary Club. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
